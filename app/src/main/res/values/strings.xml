@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Count and play</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="start">Start the quiz</string>
+    <string name="first_question" translatable="false">1. How many hedgehogs do you see in the picture below?</string>
+    <string name="second_question">2. How many owls do you see in the picture below?</string>
+    <string name="third_question">3. How many balls do you see in the picture below?</string>
+    <string name="fourth_question">4. How many balloons do you see in the picture below? Please write the number and then after the colon write their colours separated by the commas.</string>
+    <string name="answer">Write your answer</string>
+    <string name="correct_answer">4:green, blue, pink, orange</string>
+    <string name="correct_answer_2">4:green, pink, blue, orange</string>
+    <string name="correct_answer_3">4:green, pink, orange, blue</string>
+    <string name="correct_answer_4">4:green, blue, orange, pink</string>
+    <string name="fifth_question">5. How many elephants do you see in the picture below?</string>
+    <string name="sixth_question">6. How many bees do you see in the picture below?</string>
+    <string name="seventh_question">7. How many flowers do you see in the picture below?</string>
+    <string name="eighth_question">8. How many teddy bears do you see in the picture below?</string>
+    <string name="ninth_question">9. How many ice creams do you see in the picture below?</string>
+    <string name="tenth_question">10. Which of the following sentences are correct?</string>
+    <string name="sentence1">In the picture below there are two blue cars.</string>
+    <string name="sentence2">There are three blue cars in the picture below.</string>
+    <string name="sentence3">In the the picture below there are eight cars.</string>
+    <string name="sentence4">There are nine cars in the picture below.</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="check">check the answers</string>
+    <string name="total_score">Your score is:</string>
+    <string name="you_need_practise">/12. You need practise! Try work harder</string>
+    <string name="good_job">/12. Good job! But you can do better!</string>
+    <string name="excellent">/12. Wohoo! You are simply the best!</string>
+</resources>

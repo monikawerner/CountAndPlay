@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_name_font_size">36sp</dimen>
+    <dimen name="app_name_margin_bottom">18dp</dimen>
+    <dimen name="app_name_margin_top">120dp</dimen>
+    <dimen name="name_edit_text_margin">16dp</dimen>
+    <dimen name="hedgehogs_width">222dp</dimen>
+    <dimen name="hedgehogs_height">82dp</dimen>
+    <dimen name="hedgehogs_margin_top">12dp</dimen>
+    <dimen name="start_the_quiz_margin_top">12dp</dimen>
+    <dimen name="layout_margin">12dp</dimen>
+    <dimen name="question_text_size">18sp</dimen>
+    <dimen name="answers_text_size">18sp</dimen>
+    <dimen name="hedgehogs_quiz_height">189dp</dimen>
+    <dimen name="image_views_margin">36dp</dimen>
+    <dimen name="radiogroup_margin_bottom">16dp</dimen>
+    <dimen name="owls_height">276dp</dimen>
+    <dimen name="balls_height">221dp</dimen>
+    <dimen name="ballons_question_margin_bottom">16dp</dimen>
+    <dimen name="balloons_height">322dp</dimen>
+    <dimen name="answer_edit_text_margin_bottom">16dp</dimen>
+    <dimen name="elephant_height">175dp</dimen>
+    <dimen name="bees_height">290dp</dimen>
+    <dimen name="flowers_height">179dp</dimen>
+    <dimen name="bears_margin_bottom">16dp</dimen>
+    <dimen name="bears_height">307dp</dimen>
+    <dimen name="ice_creams_height">196dp</dimen>
+    <dimen name="cars_question_margin_bottom">16dp</dimen>
+    <dimen name="check_the_answers_margin_bottom">12dp</dimen>
+</resources>
