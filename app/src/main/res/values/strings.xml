@@ -11,6 +11,10 @@
     <string name="correct_answer_2">4:green, pink, blue, orange</string>
     <string name="correct_answer_3">4:green, pink, orange, blue</string>
     <string name="correct_answer_4">4:green, blue, orange, pink</string>
+    <string name="correct_answer_5">4:green,blue,pink,orange</string>
+    <string name="correct_answer_6">4:green,pink,blue,orange</string>
+    <string name="correct_answer_7">4:green,pink,orange,blue</string>
+    <string name="correct_answer_8">4:green,blue,orange,pink</string>
     <string name="fifth_question">5. How many elephants do you see in the picture below?</string>
     <string name="sixth_question">6. How many bees do you see in the picture below?</string>
     <string name="seventh_question">7. How many flowers do you see in the picture below?</string>

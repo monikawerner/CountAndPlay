@@ -83,7 +83,7 @@ public class QuizActivity extends AppCompatActivity {
          * Question 4
          */
         EditText editTextAnswer = (EditText) findViewById(R.id.edit_text);
-        if (editTextAnswer.getText().toString().equals(getString(R.string.correct_answer)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_2)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_3)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_4))) {
+        if (editTextAnswer.getText().toString().equals(getString(R.string.correct_answer)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_2)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_3)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_4)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_5)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_6)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_7)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_8))) {
             score += 2;
             editTextAnswer.setBackgroundColor(getResources().getColor(R.color.green));
         } else editTextAnswer.setBackgroundColor(getResources().getColor(R.color.red));
