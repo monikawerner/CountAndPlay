@@ -28,7 +28,7 @@ public class QuizActivity extends AppCompatActivity {
 
     /**
      * Count the score for every question
-     *
+     * Checking good and wrong answers
      * @return total score
      */
     private int countTheScore() {
@@ -36,19 +36,17 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 1
          */
-
         RadioButton radioButtonQuestion1Answer1 = (RadioButton) findViewById(R.id.question1_answer1);
         RadioButton radioButtonQuestion1Answer2 = (RadioButton) findViewById(R.id.question1_answer2);
         RadioButton radioButtonQuestion1Answer3 = (RadioButton) findViewById(R.id.question1_answer3);
         if (radioButtonQuestion1Answer1.isChecked()) {
             score++;
-            radioButtonQuestion1Answer1.setBackgroundColor(getResources().getColor(R.color.green));
         } else if (radioButtonQuestion1Answer2.isChecked()) {
             radioButtonQuestion1Answer2.setBackgroundColor(getResources().getColor(R.color.red));
         } else if (radioButtonQuestion1Answer3.isChecked()) {
             radioButtonQuestion1Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
-
+        radioButtonQuestion1Answer1.setBackgroundColor(getResources().getColor(R.color.green));
 
 
         /**
@@ -58,9 +56,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion2Answer2 = (RadioButton) findViewById(R.id.question2_answer2);
         RadioButton radioButtonQuestion2Answer3 = (RadioButton) findViewById(R.id.question2_answer3);
         if (radioButtonQuestion2Answer2.isChecked()) {
-            score ++;
-            radioButtonQuestion2Answer2.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion2Answer1.isChecked()) {
+            radioButtonQuestion2Answer1.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion2Answer3.isChecked()) {
+            radioButtonQuestion2Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion2Answer2.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 3
@@ -69,9 +71,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion3Answer2 = (RadioButton) findViewById(R.id.question3_answer2);
         RadioButton radioButtonQuestion3Answer3 = (RadioButton) findViewById(R.id.question3_answer3);
         if (radioButtonQuestion3Answer1.isChecked()) {
-            score ++;
-            radioButtonQuestion3Answer1.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion3Answer2.isChecked()) {
+            radioButtonQuestion3Answer2.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion3Answer3.isChecked()) {
+            radioButtonQuestion3Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion3Answer1.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 4
@@ -79,7 +85,8 @@ public class QuizActivity extends AppCompatActivity {
         EditText editTextAnswer = (EditText) findViewById(R.id.edit_text);
         if (editTextAnswer.getText().toString().equals(getString(R.string.correct_answer)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_2)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_3)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_4))) {
             score += 2;
-        }
+            editTextAnswer.setBackgroundColor(getResources().getColor(R.color.green));
+        } else editTextAnswer.setBackgroundColor(getResources().getColor(R.color.red));
 
         /**
          * Question 5
@@ -88,9 +95,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion5Answer2 = (RadioButton) findViewById(R.id.question5_answer2);
         RadioButton radioButtonQuestion5Answer3 = (RadioButton) findViewById(R.id.question5_answer3);
         if (radioButtonQuestion5Answer1.isChecked()) {
-            score ++;
-            radioButtonQuestion5Answer1.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion5Answer2.isChecked()) {
+            radioButtonQuestion5Answer2.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion5Answer3.isChecked()) {
+            radioButtonQuestion5Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion5Answer1.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 6
@@ -99,9 +110,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion6Answer2 = (RadioButton) findViewById(R.id.question6_answer2);
         RadioButton radioButtonQuestion6Answer3 = (RadioButton) findViewById(R.id.question6_answer3);
         if (radioButtonQuestion6Answer2.isChecked()) {
-            score ++;
-            radioButtonQuestion6Answer2.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion6Answer1.isChecked()) {
+            radioButtonQuestion6Answer1.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion6Answer3.isChecked()) {
+            radioButtonQuestion6Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion6Answer2.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 7
@@ -110,9 +125,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion7Answer2 = (RadioButton) findViewById(R.id.question7_answer2);
         RadioButton radioButtonQuestion7Answer3 = (RadioButton) findViewById(R.id.question7_answer3);
         if (radioButtonQuestion7Answer3.isChecked()) {
-            score ++;
-            radioButtonQuestion7Answer3.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion7Answer1.isChecked()) {
+            radioButtonQuestion7Answer1.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion7Answer2.isChecked()) {
+            radioButtonQuestion7Answer2.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion7Answer3.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 8
@@ -121,9 +140,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion8Answer2 = (RadioButton) findViewById(R.id.question8_answer2);
         RadioButton radioButtonQuestion8Answer3 = (RadioButton) findViewById(R.id.question8_answer3);
         if (radioButtonQuestion8Answer1.isChecked()) {
-            score ++;
-            radioButtonQuestion8Answer1.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion8Answer2.isChecked()) {
+            radioButtonQuestion8Answer2.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion8Answer3.isChecked()) {
+            radioButtonQuestion8Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion8Answer1.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 9
@@ -132,9 +155,13 @@ public class QuizActivity extends AppCompatActivity {
         RadioButton radioButtonQuestion9Answer2 = (RadioButton) findViewById(R.id.question9_answer2);
         RadioButton radioButtonQuestion9Answer3 = (RadioButton) findViewById(R.id.question9_answer3);
         if (radioButtonQuestion9Answer1.isChecked()) {
-            score ++;
-            radioButtonQuestion9Answer1.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
+        } else if (radioButtonQuestion9Answer2.isChecked()) {
+            radioButtonQuestion9Answer2.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (radioButtonQuestion9Answer3.isChecked()) {
+            radioButtonQuestion9Answer3.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        radioButtonQuestion9Answer1.setBackgroundColor(getResources().getColor(R.color.green));
 
         /**
          * Question 10
@@ -145,9 +172,16 @@ public class QuizActivity extends AppCompatActivity {
         CheckBox checkBoxSentence4 = (CheckBox) findViewById(R.id.checkbox4);
         if (!checkBoxSentence1.isChecked() && checkBoxSentence2.isChecked() && checkBoxSentence3.isChecked() && !checkBoxSentence4.isChecked()) {
             score += 2;
-            checkBoxSentence2.setBackgroundColor(getResources().getColor(R.color.green));
-            checkBoxSentence3.setBackgroundColor(getResources().getColor(R.color.green));
+        } else if (checkBoxSentence1.isChecked() && checkBoxSentence4.isChecked()) {
+            checkBoxSentence1.setBackgroundColor(getResources().getColor(R.color.red));
+            checkBoxSentence4.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (checkBoxSentence1.isChecked()) {
+            checkBoxSentence1.setBackgroundColor(getResources().getColor(R.color.red));
+        } else if (checkBoxSentence4.isChecked()) {
+            checkBoxSentence4.setBackgroundColor(getResources().getColor(R.color.red));
         }
+        checkBoxSentence2.setBackgroundColor(getResources().getColor(R.color.green));
+        checkBoxSentence3.setBackgroundColor(getResources().getColor(R.color.green));
         return score;
     }
 
