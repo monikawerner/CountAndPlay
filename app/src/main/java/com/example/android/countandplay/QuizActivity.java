@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
 
     String myPlayerName;
-    int score = 0;
+    int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 1
          */
-        RadioButton radioButtonQuestion1Answer1 = (RadioButton) findViewById(R.id.question1_answer1);
-        RadioButton radioButtonQuestion1Answer2 = (RadioButton) findViewById(R.id.question1_answer2);
-        RadioButton radioButtonQuestion1Answer3 = (RadioButton) findViewById(R.id.question1_answer3);
+        RadioButton radioButtonQuestion1Answer1 = findViewById(R.id.question1_answer1);
+        RadioButton radioButtonQuestion1Answer2 = findViewById(R.id.question1_answer2);
+        RadioButton radioButtonQuestion1Answer3 = findViewById(R.id.question1_answer3);
         if (radioButtonQuestion1Answer1.isChecked()) {
             score++;
         } else if (radioButtonQuestion1Answer2.isChecked()) {
@@ -52,9 +52,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 2
          */
-        RadioButton radioButtonQuestion2Answer1 = (RadioButton) findViewById(R.id.question2_answer1);
-        RadioButton radioButtonQuestion2Answer2 = (RadioButton) findViewById(R.id.question2_answer2);
-        RadioButton radioButtonQuestion2Answer3 = (RadioButton) findViewById(R.id.question2_answer3);
+        RadioButton radioButtonQuestion2Answer1 = findViewById(R.id.question2_answer1);
+        RadioButton radioButtonQuestion2Answer2 = findViewById(R.id.question2_answer2);
+        RadioButton radioButtonQuestion2Answer3 = findViewById(R.id.question2_answer3);
         if (radioButtonQuestion2Answer2.isChecked()) {
             score++;
         } else if (radioButtonQuestion2Answer1.isChecked()) {
@@ -67,9 +67,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 3
          */
-        RadioButton radioButtonQuestion3Answer1 = (RadioButton) findViewById(R.id.question3_answer1);
-        RadioButton radioButtonQuestion3Answer2 = (RadioButton) findViewById(R.id.question3_answer2);
-        RadioButton radioButtonQuestion3Answer3 = (RadioButton) findViewById(R.id.question3_answer3);
+        RadioButton radioButtonQuestion3Answer1 = findViewById(R.id.question3_answer1);
+        RadioButton radioButtonQuestion3Answer2 = findViewById(R.id.question3_answer2);
+        RadioButton radioButtonQuestion3Answer3 = findViewById(R.id.question3_answer3);
         if (radioButtonQuestion3Answer1.isChecked()) {
             score++;
         } else if (radioButtonQuestion3Answer2.isChecked()) {
@@ -83,7 +83,7 @@ public class QuizActivity extends AppCompatActivity {
          * Question 4
          */
         EditText editTextAnswer = (EditText) findViewById(R.id.edit_text);
-        if (editTextAnswer.getText().toString().equals(getString(R.string.correct_answer)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_2)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_3)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_4)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_5)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_6)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_7)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_8))) {
+        if (editTextAnswer.getText().toString().trim().equals(getString(R.string.correct_answer)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_2)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_3)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_4)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_5)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_6)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_7)) || editTextAnswer.getText().toString().equals(getString(R.string.correct_answer_8))) {
             score += 2;
             editTextAnswer.setBackgroundColor(getResources().getColor(R.color.green));
         } else editTextAnswer.setBackgroundColor(getResources().getColor(R.color.red));
@@ -91,9 +91,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 5
          */
-        RadioButton radioButtonQuestion5Answer1 = (RadioButton) findViewById(R.id.question5_answer1);
-        RadioButton radioButtonQuestion5Answer2 = (RadioButton) findViewById(R.id.question5_answer2);
-        RadioButton radioButtonQuestion5Answer3 = (RadioButton) findViewById(R.id.question5_answer3);
+        RadioButton radioButtonQuestion5Answer1 = findViewById(R.id.question5_answer1);
+        RadioButton radioButtonQuestion5Answer2 = findViewById(R.id.question5_answer2);
+        RadioButton radioButtonQuestion5Answer3 = findViewById(R.id.question5_answer3);
         if (radioButtonQuestion5Answer1.isChecked()) {
             score++;
         } else if (radioButtonQuestion5Answer2.isChecked()) {
@@ -106,9 +106,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 6
          */
-        RadioButton radioButtonQuestion6Answer1 = (RadioButton) findViewById(R.id.question6_answer1);
-        RadioButton radioButtonQuestion6Answer2 = (RadioButton) findViewById(R.id.question6_answer2);
-        RadioButton radioButtonQuestion6Answer3 = (RadioButton) findViewById(R.id.question6_answer3);
+        RadioButton radioButtonQuestion6Answer1 = findViewById(R.id.question6_answer1);
+        RadioButton radioButtonQuestion6Answer2 = findViewById(R.id.question6_answer2);
+        RadioButton radioButtonQuestion6Answer3 = findViewById(R.id.question6_answer3);
         if (radioButtonQuestion6Answer2.isChecked()) {
             score++;
         } else if (radioButtonQuestion6Answer1.isChecked()) {
@@ -121,9 +121,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 7
          */
-        RadioButton radioButtonQuestion7Answer1 = (RadioButton) findViewById(R.id.question7_answer1);
-        RadioButton radioButtonQuestion7Answer2 = (RadioButton) findViewById(R.id.question7_answer2);
-        RadioButton radioButtonQuestion7Answer3 = (RadioButton) findViewById(R.id.question7_answer3);
+        RadioButton radioButtonQuestion7Answer1 = findViewById(R.id.question7_answer1);
+        RadioButton radioButtonQuestion7Answer2 = findViewById(R.id.question7_answer2);
+        RadioButton radioButtonQuestion7Answer3 = findViewById(R.id.question7_answer3);
         if (radioButtonQuestion7Answer3.isChecked()) {
             score++;
         } else if (radioButtonQuestion7Answer1.isChecked()) {
@@ -136,9 +136,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 8
          */
-        RadioButton radioButtonQuestion8Answer1 = (RadioButton) findViewById(R.id.question8_answer1);
-        RadioButton radioButtonQuestion8Answer2 = (RadioButton) findViewById(R.id.question8_answer2);
-        RadioButton radioButtonQuestion8Answer3 = (RadioButton) findViewById(R.id.question8_answer3);
+        RadioButton radioButtonQuestion8Answer1 = findViewById(R.id.question8_answer1);
+        RadioButton radioButtonQuestion8Answer2 = findViewById(R.id.question8_answer2);
+        RadioButton radioButtonQuestion8Answer3 = findViewById(R.id.question8_answer3);
         if (radioButtonQuestion8Answer1.isChecked()) {
             score++;
         } else if (radioButtonQuestion8Answer2.isChecked()) {
@@ -151,9 +151,9 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 9
          */
-        RadioButton radioButtonQuestion9Answer1 = (RadioButton) findViewById(R.id.question9_answer1);
-        RadioButton radioButtonQuestion9Answer2 = (RadioButton) findViewById(R.id.question9_answer2);
-        RadioButton radioButtonQuestion9Answer3 = (RadioButton) findViewById(R.id.question9_answer3);
+        RadioButton radioButtonQuestion9Answer1 = findViewById(R.id.question9_answer1);
+        RadioButton radioButtonQuestion9Answer2 = findViewById(R.id.question9_answer2);
+        RadioButton radioButtonQuestion9Answer3 = findViewById(R.id.question9_answer3);
         if (radioButtonQuestion9Answer1.isChecked()) {
             score++;
         } else if (radioButtonQuestion9Answer2.isChecked()) {
@@ -166,10 +166,10 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Question 10
          */
-        CheckBox checkBoxSentence1 = (CheckBox) findViewById(R.id.checkbox1);
-        CheckBox checkBoxSentence2 = (CheckBox) findViewById(R.id.checkbox2);
-        CheckBox checkBoxSentence3 = (CheckBox) findViewById(R.id.checkbox3);
-        CheckBox checkBoxSentence4 = (CheckBox) findViewById(R.id.checkbox4);
+        CheckBox checkBoxSentence1 = findViewById(R.id.checkbox1);
+        CheckBox checkBoxSentence2 = findViewById(R.id.checkbox2);
+        CheckBox checkBoxSentence3 = findViewById(R.id.checkbox3);
+        CheckBox checkBoxSentence4 = findViewById(R.id.checkbox4);
         if (!checkBoxSentence1.isChecked() && checkBoxSentence2.isChecked() && checkBoxSentence3.isChecked() && !checkBoxSentence4.isChecked()) {
             score += 2;
         } else if (checkBoxSentence1.isChecked() && checkBoxSentence4.isChecked()) {

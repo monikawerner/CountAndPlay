@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
          * Figure out the player name and save it for the next activity
          */
         EditText nameEditText = findViewById(R.id.name);
-        String playerName = nameEditText.getText().toString();
+        String playerName = nameEditText.getText().toString().trim();
 
         Intent intent = new Intent(MainActivity.this, QuizActivity.class);
         intent.putExtra("Player_NAME", playerName);
